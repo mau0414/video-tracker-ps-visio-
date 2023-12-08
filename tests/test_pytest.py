@@ -23,4 +23,4 @@ def test_release_resources():
     video_processor = VideoProcessor(input_path, processed_video_path)
     video_processor.release_resources()
    
-    assert processor.cap is None, "Falha ao fechar o vídeo de entrada"
+    assert video_processor.cap is None, "Falha ao fechar o vídeo de entrada"
